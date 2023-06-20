@@ -1,7 +1,7 @@
-<h1 align="center"> Habits </h1>
+<h1 align="center"> Formulário de Cadastro </h1>
 
 <p align="center">
-Projeto construído no evento NLW, é um evento exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
+Projeto construído no desafio boraCodar, são desafios promovidos pela Rocketseat. <br/>
 </p>
 
 <p align="center">
@@ -27,7 +27,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O Habits é um app para ajudar a rastrear os hábitos.
+Um formulário para cadastro, incluindo informações pessoais e de onde trabalha.
 
 - [Visite o projeto online](https://miguelnfariass.github.io/formulario-cadastro/)
 
@@ -44,13 +44,6 @@ Você pode visualizar o layout do projeto através [DESSE LINK](<https://www.fig
 3. Abra o arquivo `index.html` em um navegador web.
 
 4. A tela com formulário será carregada e estará pronto para uso.
-
-## Autor
-
-Esse projeto foi desenvolvido por [Miguel Farias](https://github.com/miguelnfariass).
-
-- E-mail: migueln.fariass@gmail.com
-- LinkedIn: [Miguel Farias](https://www.linkedin.com/in/miguelnfarias/)
 
 ## Licença
 
