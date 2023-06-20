@@ -1,4 +1,4 @@
-<h1 align="center"> Formulário de Cadastro </h1>
+<h1 align="center"> Formulário Multi Step </h1>
 
 <p align="center">
 Projeto construído no desafio boraCodar, são desafios promovidos pela Rocketseat. <br/>
@@ -44,7 +44,3 @@ Você pode visualizar o layout do projeto através [DESSE LINK](<https://www.fig
 3. Abra o arquivo `index.html` em um navegador web.
 
 4. A tela com formulário será carregada e estará pronto para uso.
-
-## Licença
-
-Este projeto está sob a licença [MIT](LICENSE).
