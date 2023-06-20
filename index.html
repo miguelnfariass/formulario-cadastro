@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Titilium+Web:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main id="app">
+      <form>
+        <!-- Parte de cima do projeto -->
+        <div class="step-progress">
+          <strong class="active" data-step>Contato</strong>
+          <img src="./assets/seta.svg" alt="seta" />
+
+          <strong data-step>Empresa</strong>
+          <img src="./assets/seta.svg" alt="seta" />
+
+          <strong data-step>Projeto</strong>
+        </div>
+
+        <!-- Página Contato -->
+        <div class="form-step active">
+          <div class="content">
+            <div class="input-wrapper">
+              <label for="name">Nome</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Como prefere ser chamado"
+                required
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="phone">Telefone</label>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="Digite seu número de WhatsApp"
+                onkeypress="return /\d/.test(event.key)"
+                required
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Digite seu e-mail"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="button-wrapper justify-end">
+            <button type="button" class="btn primary" data-action="next">
+              CONTINUAR
+            </button>
+          </div>
+        </div>
+
+        <!-- Página Empresa -->
+        <div class="form-step hide">
+          <div class="content">
+            <div class="input-wrapper">
+              <label for="business-name">Nome da empresa</label>
+              <input
+                type="text"
+                name="business-name"
+                id="business-name"
+                placeholder="Qual é o nome da empresa"
+                required
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="business-colab-number">Número de funcionários</label>
+              <input
+                type="text"
+                name="business-colab-number"
+                id="business-colab-number"
+                placeholder="Digite o número de colaboradores"
+                onkeypress="return /\d/.test(event.key)"
+                required
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="business-about">Sobre seu negócio</label>
+              <textarea
+                name="business-about"
+                id="business-about"
+                placeholder="Fale um pouco sobre seus produtos e serviços"
+                required
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="button-wrapper">
+            <button type="button" class="btn secondary" data-action="prev">
+              VOLTAR
+            </button>
+            <button type="button" class="btn primary" data-action="next">
+              CONTINUAR
+            </button>
+          </div>
+        </div>
+
+        <!-- Página Projeto -->
+        <div class="form-step hide">
+          <div class="content">
+            <div class="input-wrapper">
+              <label for="project">Objetivos do projeto</label>
+              <textarea
+                name="project"
+                id="project"
+                placeholder="Descreva quais objetivos deste projeto"
+                required
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="button-wrapper">
+            <button type="button" class="btn secondary" data-action="prev">
+              VOLTAR
+            </button>
+            <button class="btn primary" type="submit">ENVIAR RESPOSTA</button>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+  <script src="./script.js"></script>
+</html>
